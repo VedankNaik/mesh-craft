@@ -28,5 +28,19 @@ export const useStore = create((set) => ({
       }),
     }));
   },
-
+  setTexture: (texture) => {
+    set(() => ({
+      texture,
+    }));
+  },
+  saveWorld: () => {
+    set((prev) => {
+      setLocalStorage("cubes", prev.cubes);
+    });
+  },
+  resetWorld: () => {
+    set(() => ({
+      cubes: [],
+    }));
+  },
 }));

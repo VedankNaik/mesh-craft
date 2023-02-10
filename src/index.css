@@ -62,7 +62,23 @@ body {
   border: 2px solid red;
 }
 
-.menu {
+.world-menu {
   top: 0px;
   left: 10px;
+}
+
+.controls-menu {
+  top: 5px;
+  right: 10px;
+  background-color: white;
+  width: max-content;
+  height: max-content;
+  opacity: 50%;
+  font-size: 16px;
+  padding: 2px;
+  border-radius: 10px;
+}
+
+.controls-menu:hover {
+  opacity: 100%;
 }
